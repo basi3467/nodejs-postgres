@@ -1,5 +1,7 @@
 const Sequelize = require('sequelize');
-
+/*const sequelize = new Sequelize('database', 'username', 'password', {
+  dialect: 'database name(can be mysql/postgres/sqlite/mariadb)' postgres needs two libraries(pg an dpg-hstore)
+})*/
 const sequelize = new Sequelize('dvdrental', 'postgres', 'postgres', {
     host: 'localhost',
     dialect: 'postgres',
