@@ -2,7 +2,11 @@
 const Sequelize = require('sequelize');
 const sequelize = require('../connection.js/dbconnect')
 
-var Heroes = sequelize.define('heroes', {
+var Heroes = sequelize.define('sample', {
+    sample_id: {                          //if primary key is not defined sequelize creates id field as primary
+      type: Sequelize.INTEGER,
+      primaryKey: true
+    },
     name: {
       type: Sequelize.STRING
     },
