@@ -1,3 +1,4 @@
+//models folder
 const Sequelize = require('sequelize');
 const sequelize = require('../connection.js/dbconnect')
 
